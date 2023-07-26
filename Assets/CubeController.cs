@@ -44,7 +44,7 @@ public class CubeController : MonoBehaviour
         //キューブまたは地面に当たった時に効果音を出す 接触判定
         if (collision.gameObject.CompareTag("CubeTag") || collision.gameObject.CompareTag("GroundTag"))
         {
-            //seを鳴らす
+            //seを鳴らす PlayOneShotはSEにPlayはBGMに適してる
             audioSource.PlayOneShot(audioClip);
             //ログの表示
             Debug.Log("接触");
